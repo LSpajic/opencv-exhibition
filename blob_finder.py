@@ -23,6 +23,8 @@ while True:
 
     mask = cv2.inRange(hsv, g_bijela, do_bijela)
     #ovdje ide kod za trazenje blobova 
+    cv2.imshow("mask",mask)
+
     key = cv2.waitKey(1)
     if key == ord('q'):
         break
